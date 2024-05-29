@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas da Larica</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="header-color-1"> <img src="/images/logo.png" alt="Logo do Meu Site" class="logo"> </header>
+    <header class="header-color-2"></header>
+    <header class="header-color-3"> 
+        <button class="header-button"><a href="/receita/lista">Todas</a></button>
+        <button class="header-button"><a href="/receita/vo">Receitas de vó</a></button>
+        <button class="header-button"><a href="/receita/fit">Receitas fit</a></button>
+        <button class="header-button"><a href="/receita/larica">Receitas da larica</a></button>
+    </header>    
+    <div class="recipe-container">
+        <% receitas.forEach(receita => { %>
+        <div class="recipe-box">
+            <h3><%= receita.nome %></h3>
+            <img src="../images/upload/<%= receita.imagem %>" alt="Foto da Receita" class="recipe-image">
+            <div class="recipe-info">
+                <h4>Ingredientes:</h4>
+                <p><%= receita.ingredientes %></p>
+                <h4>Modo de preparo:</h4>
+                <p><%= receita.modo_preparo %></p>
+            </div>
+        </div>
+        <% }) %>
+        <a href="/pagina/cadastro"><button class="add-button">+</button></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+header h1 {
+    margin: 0;
+}
+
+.header-color-1 {
+    background-color: #964b00;
+    padding: 2px 18px;
+}
+
+.header-color-2 {
+    background-color: #5d4037;
+    padding: 8px;
+}
+
+.header-color-3 {
+    background-color: #ffa726;
+    padding: 8px;
+}
+.logo {
+    width: 40px;
+}
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe-box {
+    flex: 0 0 calc(33.33% - 20px); /* Define a largura de cada caixa de receita */
+    margin: 10px;
+    text-align: center;
+ 
+}
+
+.recipe-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+.recipe-info {
+    text-align: left;
+}
+
+.recipe-info h2 {
+    margin: 0;
+}
+
+.recipe-info p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .recipe-box {
+        flex: 0 0 calc(100% - 20px); /* Em telas menores, cada caixa de receita ocupa 100% da largura */
+    }
+}
+.header-button {
+    margin-left: 5px;
+    padding: 0; /* Remova o preenchimento */
+    background: none; /* Remova o fundo */
+    border: none; /* Remova a borda */
+    color: #ffffff !important; /* Cor do texto */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    font-size: 14px; /* Tamanho da fonte */
+}
+.header-button a{
+    color: #ffffff ;
+    
+}
+.header-button:hover {
+    text-decoration: underline; /* Sublinhar o texto ao passar o mouse */
+}
+.caixa-cadastro {
+    background-color: rgba(237, 195, 174, 0.355); /* Cor com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Definir a largura desejada */
+    max-width: 400px; /* Definir a largura máxima desejada */
+    margin: 100px auto; /* Centralizar horizontalmente e definir margem superior */
+    position: relative; /* Required for absolute positioning */
+
+}
+input[type="text"],
+input[type="email"],
+input[type="foto"],
+input[type="password"] {
+      width: calc(100% - 22px); /* Adicionando margem à largura total */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+}
+.link-login{
+    text-align: center;
+}
+.buttonenter {
+    background-color: #c69c87;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centralizar horizontalmente */
+  }
+  .add-button {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #c69c87b7;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 15%;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:hover {
+    background-color: #c69c87;
+}
