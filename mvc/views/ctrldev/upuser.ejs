@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Usuário</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Atualizar Usuário</h1>
+        <form action="/cadastro" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="txtid" id="txtid" value="<%= cadastro.id %>">
+            <input type="file" name="foto" id="foto">
+            <div class="form-group">
+                <label for="nivel">Nível:</label>
+                <select name="nivel" id="nivel" class="form-control">
+                    <option value="0">Visitante</option>
+                    <option value="1">Administrador</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Atualizar</button>
+        </form>
+    </div>
+    <!-- Bootstrap JavaScript (necessário para os modais) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
